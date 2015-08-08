@@ -23,9 +23,9 @@ def hello_world():
  output = ""
  for i in range(1,100):
   output ="Kelipatan angka "+i+"\n"
-  for j in range(1,100):
-   output += i*j+" "
-  output += "\n\n"
+  #for j in range(1,100):
+   #output += i*j+" "
+  #output += "\n\n"
  return output, 200, { 'Content-Type': 'text/plain' }
 
 if __name__ == '__main__':
