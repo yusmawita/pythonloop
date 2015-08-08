@@ -20,11 +20,12 @@ app = Flask(__name__)
 def hello_world():
     output = ""
     for i in range(1,100):
-    return "Kelipatan " i
-        for j in range(0,i):
-            output+="*"
-        output+="\n"
-     { 'Content-Type': 'text/plain' }
+    	output+="Kelipatan "+i+"\n"
+    
+    for j in range(1,100):
+    	output+=((i*j)+" ")
+    return output, 200,
+    { 'Content-Type': 'text/plain' }
 
 if __name__ == '__main__':
     app.run(debug = True)
