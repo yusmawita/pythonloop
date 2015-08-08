@@ -20,10 +20,15 @@ app = Flask(__name__)
 def hello_world():
     output = ""
     for i in range(0,100):
-        for j in range (0,i):
-            output += "✿♛"
+        for j in range(0,i):
+            output+="*"
         output+="\n"
     return output, 200, { 'Content-Type': 'text/plain' }
 
 if __name__ == '__main__':
     app.run(debug = True)
+
+
+
+
+
