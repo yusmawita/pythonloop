@@ -20,14 +20,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    output = "<table>"
-    for i in range(1,100):
-        if(i%2==0):
-            output=(i+"\n")
-    for i in range(1,100):
-        if(i%2==1):
-            output+=(i+"\n")        
-    output+="</table>"
+    output = '<table border="1"><tr><td>123456789</td></tr></table>'
+    #for i in range(1,100):
+    #    if(i%2==0):
+    #        output=(i+"\n")
+    #for i in range(1,100):
+    #    if(i%2==1):
+    #        output+=(i+"\n")        
+    #output+="</table>"
     return output, 200, { 'Content-Type': 'text/plain' }
 
 if __name__ == '__main__':
