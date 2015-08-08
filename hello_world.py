@@ -20,7 +20,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    output = '<table border="1"><tr><td>123456789</td></tr></table>'
+    output = "<table border=1><tr><td>123456789</td></tr></table>"
     #for i in range(1,100):
     #    if(i%2==0):
     #        output=(i+"\n")
