@@ -22,7 +22,7 @@ app = Flask(__name__)
 def hello_world():
     output = ""
     for i in range(1,100):
-    	output ="Kelipatan angka "+i+"\n"
+    	output ="Kelipatan angka \n"
   #for j in range(1,100):
    #output += i*j+" "
   #output += "\n\n"
