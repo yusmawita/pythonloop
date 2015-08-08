@@ -22,8 +22,8 @@ def hello_world():
     for i in range(1,100):
     	output+="Kelipatan "+i+"\n"
     
-    for j in range(1,100):
-    	output+=((i*j)+" ")
+        for j in range(1,100):
+    	    output+=((i*j)+" ")
     return output, 200,
     { 'Content-Type': 'text/plain' }
 
