@@ -14,23 +14,24 @@
 # along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 
 
-
+from flask import render_template
 from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    output="<table border="1"><tr><td width="200px">Bilangan Genap</td><td width="200px">Bilangan Ganjil</td></tr></table>"
+    #output="<table border="1"><tr><td width="200px">Bilangan Genap</td><td width="200px">Bilangan Ganjil</td></tr></table>"
     #<tr>
     #<td style="text-align:center")
     #for i  
     #output = ""
-    for i in range(1,100):
-        output +="Kelipatan angka "+str(i)+"\n"
-        for j in range(1,100):
-            output += str(i*j)+" "
-    	output += "\n\n"
-    return output, 200, { 'Content-Type': 'text/html' }
+    #for i in range(1,100):
+    #    output +="Kelipatan angka "+str(i)+"\n"
+    #    for j in range(1,100):
+    #        output += str(i*j)+" "
+    #	output += "\n\n"
+    #return output, 200, { 'Content-Type': 'text/html' }
+    return render_template('hello.html')
 
 if __name__ == '__main__':
     app.run(debug = True)

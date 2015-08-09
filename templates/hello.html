@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bilangan genap - ganjil</title>
+</head>
+<body>
+<table border="1">
+<tr>
+<td>Bilangan genap</td>
+<td>Bilangan ganjil</td>
+</tr>
+<tr>
+<td>
+{% for i in range(0,100) %}
+{% if i%2 == 0 %}
+{{i}}
+{% endif %}
+{% endfor %}
+<br/>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</body>
+</html>
+
