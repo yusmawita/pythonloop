@@ -33,7 +33,7 @@ def code1():
 
 @app.route('/code2')
 def code2():
-output = ""
+    output = ""
     for i in range(1,100):
         output +="Kelipatan angka "+str(i)+"\n"
         for j in range(1,100):
