@@ -26,9 +26,10 @@ def hello_world():
 def code1():
     output = ""
     for i in range(1,100):
-        output+="Kelipatan "+i+"\n"
+        output+="Kelipatan "+str(i)+"\n"
         for j in range(1,100):
-            output+=(i*j)+" "
+            output+=str(i*j)+" "
+        output+="\n\n"
     return output, 200, { 'Content-Type': 'text/plain' }
 
 @app.route('/code2')
