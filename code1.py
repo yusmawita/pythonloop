@@ -20,18 +20,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    output="<table border="1"><tr><td width="200px">Bilangan Genap</td><td width="200px">Bilangan Ganjil</td></tr></table>"
-    #<tr>
-    #<td style="text-align:center")
-    #for i  
-    #output = ""
+    output = ""
     for i in range(1,100):
-        output +="Kelipatan angka "+str(i)+"\n"
+        output+="Kelipatan "+i+"\n"
         for j in range(1,100):
-            output += str(i*j)+" "
-    	output += "\n\n"
-    return output, 200, { 'Content-Type': 'text/html' }
+    	    output+=(i*j)+" "
+    return output, 200, { 'Content-Type': 'text/plain' }
 
 if __name__ == '__main__':
     app.run(debug = True)
-
