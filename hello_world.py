@@ -22,6 +22,31 @@ app = Flask(__name__)
 def hello_world():
     return render_template('index.html')
 
+@app.route('/code1')
+def code1():
+    output = ""
+    for i in range(1,100):
+        output+="Kelipatan "+i+"\n"
+        for j in range(1,100):
+            output+=(i*j)+" "
+    return output, 200, { 'Content-Type': 'text/plain' }
+
+@app.route('/code2')
+def code2():
+output = ""
+    for i in range(1,100):
+        output +="Kelipatan angka "+str(i)+"\n"
+        for j in range(1,100):
+            output += str(i*j)+" "
+        output += "\n\n"
+    return output, 200, { 'Content-Type': 'text/plain' }
+
+@app.route('/code3')
+def code3():
+    return render_template('hello.html')
+
+
+
 if __name__ == '__main__':
     app.run(debug = True)
 
