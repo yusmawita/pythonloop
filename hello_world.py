@@ -24,7 +24,7 @@ def hello_world():
 
 @app.route('/code1')
 def code1():
- output = ""
+    output = ""
     for i in range(0,100):
         for j in range(0,i):
             output+="✿"
