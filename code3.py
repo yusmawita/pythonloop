@@ -18,7 +18,7 @@ from flask import render_template
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/code3')
 def hello_world():
     #output="<table border="1"><tr><td width="200px">Bilangan Genap</td><td width="200px">Bilangan Ganjil</td></tr></table>"
     #<tr>

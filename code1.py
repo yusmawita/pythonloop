@@ -18,7 +18,7 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/code1')
 def hello_world():
     output = ""
     for i in range(1,100):
