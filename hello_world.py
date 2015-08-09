@@ -24,13 +24,15 @@ def hello_world():
 
 @app.route('/code1')
 def code1():
-    output = ""
-    for i in range(1,100):
-        output+="Kelipatan "+str(i)+"\n"
-        for j in range(1,100):
-            output+=str(i*j)+" "
-        output+="\n\n"
+ output = ""
+    for i in range(0,100):
+        for j in range(0,i):
+            output+="*"
+        output+="\n"
     return output, 200, { 'Content-Type': 'text/plain' }
+
+if __name__ == '__main__':
+    app.run(debug = True)
 
 @app.route('/code2')
 def code2():
